@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang=" en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" contents="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My project</title>
+        <style>
+            body {
+                background-color: rgb(56, 92, 72);
+                text-align: center;
+                color: rgb(182, 176, 163); 
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="background-color: LightGray;"> This is Jahnavi's webpage.</h1>
+        <p> She is a first year student at Vellore Institue of Technology pursusing a B.Tech degree in Computer 
+            Science with specialisation in Information Security.
+        </p> 
+        <h3> What is your name? </h3>
+        <input id="userInput"> <br> <br>
+        <h3>When is your birthday? </h3>
+        <input id="dob"> <br> <br>
+        <button onclick ="myFunction()"> Enter </button>
+        <h2 id="message" style="color:slateblue"> </h2>
+        <h2 id="wish" style="color:slateblue"></h2>
+        <hr>
+        <br>
+        <ul> <h2> She is currently interested in:
+            <li> Web Development </li>
+            <li> Machine Learning </li>
+            <li> Competitive Programming </li>
+            <li> Design </li>
+            <li> Public Speaking </li>
+        </h2></ul>
+        <br>
+        <p align="right"> She likes photography and this is her favorite click of the month!
+        </p>
+        <img src="C:\Users\SUBIR MAJUMDER\Desktop\programming\ieee project\view.png" alt="pretty view" border = "2" align ="right" height="100"; width="100">
+        <br> <br>
+        <h4 align="left"> Contact her through her linkedin profile: <a href="https://www.linkedin.com/in/jahnavi-majumder-706339255">Linkedin</a> </h4>
+
+        <script>
+            function myFunction() 
+            {
+                let userInput = document.querySelector("#userInput");
+                let message = document.querySelector("#message");
+                let dob = document.querySelector("#dob");
+                let wish = document.querySelector("#wish");
+                message.innerHTML = "Welcome to my portal " + userInput.value + "!";
+                wish.innerHTML = "Jahnavi wishes you a happy birthday on " + dob.value+"!";
+            }
+        </script>
+    </body>
+</html>
